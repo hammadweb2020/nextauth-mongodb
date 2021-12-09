@@ -2,11 +2,17 @@ import { React, useEffect } from 'react'
 
 import { getProviders, getSession } from 'next-auth/react'
 import BtnLogin from '../components/BtnLogin';
-import Router from 'next/router'
+import { useRouter } from "next/router";
+import Router from "next/router";
+import SignInError from './signin'
 
 
 const Login = ({providers, session}) => {
 console.log({providers, session})
+
+
+const { error } = useRouter().query;
+
 
 useEffect(() => {
     if(session) return Router.push('/');
@@ -25,6 +31,8 @@ useEffect(() => {
             style={{ color: '#555', letterSpacing: '1px' }}>
               Hammad Next Auth
             </h2>
+
+            {error && <SignInError error={error} />}
     
             <p className="text-center">Login with NextAuth</p>
             <BtnLogin 

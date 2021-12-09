@@ -8,8 +8,10 @@ import clientPromise from "./lib/mongodb"
 export default NextAuth({
   secret: process.env.SECRET,
   session: {
-        jwt:true
+        jwt:true,
+        maxAge: 30 * 24 * 60 * 60, // 30 days
   },
+
   adapter: MongoDBAdapter(clientPromise),
   providers: [
     // OAuth authentication providers
@@ -32,7 +34,7 @@ export default NextAuth({
 
   ],
   pages:{
-
+    error: '/login',
 signIn: '/login'
   },
 

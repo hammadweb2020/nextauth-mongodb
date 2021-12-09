@@ -9,10 +9,10 @@ const Home = ({session}) => {
   return (
     <div>
     <div className="px-4 py-5 my-5 text-center">
-    <Image className="d-block mx-auto mb-4" src="/public/icon-512x512.png" alt="" width="72" height="72" />
+    <Image className=" mx-auto mb-4" src="/public/icon-512x512.png" alt="" width="72" height="72" />
     <h1 className="display-5 fw-bold">Hammad Next Auth</h1>
     <div className="col-lg-6 mx-auto">
-      <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <p className="lead mb-4">I have done the Authentication with Google, GitHub and Facebook using Next Auth. I am storing the Login data in MongoDB.</p>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
         
         
