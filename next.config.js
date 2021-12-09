@@ -7,6 +7,6 @@ module.exports = {
     'lh3.googleusercontent.com',
     'lh4.googleusercontent.com',
     'lh5.googleusercontent.com',
-    'lh6.googleusercontent.com','avatars.githubusercontent.com'],
+    'lh6.googleusercontent.com','avatars.githubusercontent.com','platform-lookaside.fbsbx.com'],
   },
 }
