@@ -9,8 +9,8 @@ const Home = ({session}) => {
   return (
     <div>
     <div className="px-4 py-5 my-5 text-center">
-    <Image className=" mx-auto mb-4" src="/public/icon-512x512.png" alt="" width="72" height="72" />
-    <h1 className="display-5 fw-bold">Hammad Next Auth</h1>
+    <Image src="/icon.png" alt="" width={72} height={72} />
+    <h1 className="display-5 fw-bold mt-4">Next Auth App</h1>
     <div className="col-lg-6 mx-auto">
       <p className="lead mb-4">I have done the Authentication with Google, GitHub and Facebook using Next Auth. I am storing the Login data in MongoDB.</p>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">

@@ -8,8 +8,6 @@ import SignInError from './signin'
 
 
 const Login = ({providers, session}) => {
-console.log({providers, session})
-
 
 const { error } = useRouter().query;
 
